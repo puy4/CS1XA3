@@ -8,6 +8,6 @@ case "$choice" in
      break;;
      deletingTmpFiles) echo "$choice"; git ls-files . --exclude-standard --others | grep '\.tmp$' | xargs git rm
      break;;
-     mergeLog) echo "$choice" ; git log --oneline | cut -d '' -f 1 | tee merge.log
+     mergeLog) echo "$choice" ;  git log --oneline --merges | cut -d '' -f 1 | tee merge.log
 esac
 done
