@@ -13,3 +13,8 @@ sh 3
 
 2.Delete Temporary Files 
 the script finds and deletes all untracked files with the extension .tmp in the repo. 
+
+
+3.Merge Log
+the script output the merge history in this repo and put it in the file merge.log.
+
