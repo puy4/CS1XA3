@@ -20,7 +20,7 @@ case "$choice" in
                                           fi
                                       done
      break;;
-     deleteEmptyFile) echo "$choice" ; find ~/CS1XA3 -name "*.py" -type f -delete
+     deleteEmptyFile) echo "$choice" ; find ~/CS1XA3 -name "*.py" -type f -size 0 -delete
      break;;
      exitTheScript) exit
 esac
