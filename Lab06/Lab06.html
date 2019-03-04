@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<input type="text" id="myInput" oninput="myFunction()">
+<input type="text" id="myInput1" oninput="myFunction()">
+
+
+<p id="demo">:</p> 
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput").value;
+
+  var y = document.getElementById("myInput1").value;
+  document.getElementById("demo").innerHTML = x+":"+y;
+ 
+}
+</script>
+
+</body>
+</html>
+
+  
