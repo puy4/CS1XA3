@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<form action="https://mac1xa3.ca/e/puy4/lab7/" method="post">
+  </div>
+    <label>
+      <input name="name" id="name" type="name" placeholder= "Name"onkeyup='check();' />
+    </label>
+    <label>
+      <input name="password" id="password" type="password" placeholder="password" onkeyup='check();' />
+    </label>
+    
+    <label>
+      <input type="password" name="confirm_password" id="confirm_password" placeholder="re-enter password" onkeyup='check();' /> 
+      <br><span style="color:green" id='message'>OK</span><br>
+    </label>
+
+    <script>
+      var check = function() {
+      if (document.getElementById('password').value ==
+          document.getElementById('confirm_password').value) {
+          document.getElementById('message').style.color = 'green';
+          document.getElementById('message').innerHTML = 'OK';
+      } else {
+      		document.getElementById('message').style.color = 'red';
+          document.getElementById('message').innerHTML = 'Passwords do not match!';
+      }
+  }
+    </script>
+   
+  </div>
+  <div class="button">
+    <button type="submit">POST</button>
+  </div>
+</form>
+
+</body>
+</html>
