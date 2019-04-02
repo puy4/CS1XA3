@@ -66,7 +66,8 @@ function calculatorappears(){
     document.getElementById('s4').type = 'button';
     document.getElementById('s5').type = 'button';
     document.getElementById('s6').type = 'button';
-
+    document.getElementById("workout").style.display = "none"
+    document.getElementById("sexes").style.display = "none"
     document.getElementById('age').type = 'hidden';
     document.getElementById('female').type = 'hidden';
     document.getElementById('male').type = 'hidden';
