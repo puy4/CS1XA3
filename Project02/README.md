@@ -2,7 +2,7 @@
 
 A simple that contains a calculator and a calorie intake calculator
 
-##How to find the apps?
+## How to find the apps?
 
 Click on the circle circling on the right corner to use the calculator, and click on the strip in the middle to use the calorie intake calculator
 
