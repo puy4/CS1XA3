@@ -1,6 +1,6 @@
 # My Simple Website
 
-A simple that contains a calculator and a calorie intake calculator
+A simple website that contains a calculator and a calorie intake calculator
 
 ## How to find the apps?
 
