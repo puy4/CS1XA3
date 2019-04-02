@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <header>
+        <svg id="qq" width="100" height="200" >
+      <path d="M10,89 A33,7 75 1,1 110 10 A12,12 -45 0,1 10,110"
+          stroke="" stroke-width="2" 
+          fill="none" id="theMotionPath"/>
+      <circle cx="" cy="" r="20" fill="yellow" onclick="calculatorappears()" >
+        <animateMotion dur="8s" repeatCount="indefinite">
+          <mpath xlink:href="#theMotionPath"/>
+        </animateMotion>
+      </circle>
+    </svg>
+    <h2>WELCOME!!!!!!!!<h2>
+     <h1 id = "calc"><h1>
+      </header>
+    <title>peninsulaironbox</title>
+    <link rel = "stylesheet" href="style.css" />
+
+</head>
+<body >
+          
+    <svg>
+
+        <line id="line1" x1= 320 y1=20 x2= 0 y2 = 88 onclick="caloriescalcappear()" >
+        <animate attributeType="style" attributeName="opacity" from="0" to="2" dur="1s"repeatCount="indefinite"/>
+        
+    </svg>
+    
+    <svg >
+        <circle cx=200 cy =60 r = 50 style="stroke:rgb(12,255,255);stroke-width:2;fill:red" />
+        <animate attributeType="style" attributeName="opacity" from="0" to="2" dur="0.75s"repeatCount="indefinite"/>
+      </svg>
+        <svg width="325" height="325">
+          <path d="M80 80
+                   A 45 45, 0, 0, 0, 125 125
+                   L 125 80 Z" fill="none" style="stroke:rgb(2,25,255);"/>
+        </svg>
+     
+      
+       <div id = "workout" style="display: none;">
+          <h4 id="wotag">activity level:</h4>
+          <div><label id="wotag1">I'm sedentary </label><input name="wo1" id="wo1" type="hidden" /></div><br><br>
+          <div><label id="wotag2">I'm lightly active(exercise 1-3 times a week)</label><input name="wo2" id="wo2" type="hidden" /></div><br><br>
+          <div><label id="wotag3">I'm moderatetely active(3-5 times a week) </label><input name="wo3" id="wo3" type="hidden" /></div><br><br>
+          <div><label id="wotag4">I'm very active (5-7 times a week) </label><input name="wo4" id="wo4" type="hidden" /></div><br><br>
+          <div><label id="wotag5">I'm extra active (physical job or hard training everyday)</label><input name="wo5" id="wo5" type="hidden" /></div>
+       </div>
+
+        <div> <h4 id="agetag"></h4>
+           <input name="age" id="age" type="hidden" />
+      </div>
+
+      <div id="sexes" style="display: none;">
+        <h4 id="sextag" >Sex:</h4>
+        <div><label id="femaletag">Female:<label><input name="female" id="female" type="hidden"/></div>
+        <div><label id="maletag">Male:<label><input type="hidden" name="male" id="male" /></div>
+        </div>
+       
+      
+        <div>  <h4 id="weighttag"></h4>
+
+        <input type="hidden" name="weight" id="weight"  />   
+      </div>
+
+
+
+      <div><h4 id="heighttag"></h4>
+   
+      <input type="hidden" name="height" id="height"  />   
+      </div>
+
+
+      <div><input id="bo" type="hidden" value="Submit" form="info" onclick="validation()" /></div>
+      <div id="div1"></div> 
+  
+    
+
+
+
+<div class="container">
+    <img src="Image003.jpg" alt="bkg" id="bkg" style="width:4cm;height:5cm"  >
+<div class="center1"><input type="hidden" id="entry" ></div>
+<div class="center2"><input type="hidden" name="v1" id="v1" value="1" onclick="num(value)"/> 
+    <input type="hidden" name="v2" id="v2" value="2" onclick="num(value)"/>
+    <input type="hidden" name="v3" id="v3" value="3" onclick="num(value)"/>
+    <input type="hidden" name="s1" id="s1" value="+" onclick="num(value)"/>
+  </div>
+  <div class="center3" ><input type="hidden" name="v4" id="v4" value="4" onclick="num(value)"/>  
+  <input type="hidden" name="v5" id="v5" value="5" onclick="num(value)"/>  
+  <input type="hidden" name="v6" id="v6" value="6" onclick="num(value)"/> 
+  <input type="hidden" name="s2" id="s2" value="-" onclick="num(value)"/> </div>
+  <div  class="center4">
+  <input type="hidden" name="v7" id="v7" value="7" onclick="num(value)" />  
+  <input type="hidden" name="v8" id="v8" value="8" onclick="num(value)"/>  
+  <input type="hidden" name="v9" id="v9" value="9" onclick="num(value)"/>  
+  <input type="hidden" name="s3" id="s3" value="*" onclick="num(value)"/></div>
+  <div class="center5">
+    <input type="hidden" name="v0" id="v0" value="0" onclick="num(value)"/>
+    <input type="hidden" name="s6" id="s6" value="=" onclick="cal()"/>
+    <input type="hidden" name="s4" id="s4" value="%" onclick="num(value)"/>
+    <input type="hidden" name="s5" id="s5" value="/" onclick="num(value)"/></div>
+  </div>
+  <input type="button" onclick="location.href='https://mac1xa3.ca/u/puy4';" value="check out my CV page" />
+<script src = "test.js"></script>
+</body>
+</html>
+
+
+

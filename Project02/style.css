@@ -1,0 +1,111 @@
+
+body {background-color: rgb(163, 238, 93);}
+h4 {
+    font-family:Arial, Times, serif;
+    color: rgb(89, 134, 218);
+    text-align: center;
+
+
+}
+
+#sex1{display:inline-block;margin-right:10px;} 
+#sex2 {display:inline-block;} 
+
+
+
+div{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#container1 {text-align:center;}
+
+svg {
+    position: relative;}
+
+#line1{
+    stroke:rgb(0, 153, 255);
+    stroke-width:15;
+
+    transform: translate(20px, 0px);
+    
+}
+
+#line2{
+    stroke:rgb(255,255,0);
+    stroke-width:15;
+}
+
+#line3{
+    stroke:rgb(12,255,255);
+    stroke-width:15;
+}
+
+
+
+.path {
+    stroke-dasharray: 20;
+  }
+
+
+
+#ell{    
+    stroke-dasharray: 20px;    stroke-dashoffset: 100px;}
+
+h2{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .center1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center2{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center3{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center4{
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center5{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #bkg{
+    display:none
+  }
+
+  #wo1{
+    text-align: center;
+  }

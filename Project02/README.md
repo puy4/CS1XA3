@@ -1,12 +1,11 @@
-# webpagecv
+# My Simple Website
 
-my cv that I might be using to apply a co-op job.
+A simple that contains a calculator and a calorie intake calculator
 
-## usage
+##How to find the apps?
 
-simply open the html file
+Click on the circle circling on the right corner to use the calculator, and click on the strip in the middle to use the calorie intake calculator
 
-## acknowledgement
+You can also:
 
-special thanks to http://sampleresumetemplate.net/ for providing this template
-
+Check out my CV page at the bottom of the webpage.
