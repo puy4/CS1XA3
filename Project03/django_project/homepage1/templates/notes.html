@@ -5,7 +5,9 @@
       <h1>A Note-taking App</h1>
    </header>
    <div>
-     {{context}}
+   {% for note in notes %}
+     <p>{{ note.post1context }}</p>
+     <p>{{ note.date}}<p>
    </div>
 {% endblock %}
 
