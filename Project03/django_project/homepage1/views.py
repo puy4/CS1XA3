@@ -1,10 +1,13 @@
 from django.shortcuts import render
-
+from .models import Post
 
 hometitle = {'title':'A Simple Note-taking App'}
 
 
+
 def home(request):
     return render(request, 'home.html', hometitle)
-   
-# Create your views here.
+
+def notes(request):
+    context = {'post1':Post.objects.all()}  
+    return render(request, 'notes.html', context)
