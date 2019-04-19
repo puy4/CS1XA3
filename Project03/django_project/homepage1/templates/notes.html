@@ -6,9 +6,11 @@
    </header>
    <div>
    {% for note in notes %}
-     <p>{{ note.post1context }}</p>
-     <p>{{ note.date}}<p>
+     <p>{{ note.content }}</p>
+     <p>{{ note.date}}</p>
+     <p>{{ note.user}}</p>
    </div>
+   {% endfor %}
 {% endblock %}
 
 

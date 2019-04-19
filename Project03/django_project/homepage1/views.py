@@ -9,5 +9,5 @@ def home(request):
     return render(request, 'home.html', hometitle)
 
 def notes(request):
-    context = {'notes':Post.objects.all()}  
+    context = {'notes':Post.objects.all()}
     return render(request, 'notes.html', context)
