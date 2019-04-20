@@ -13,7 +13,7 @@
 <body>
     {% if messages%}
   
-        {div class="alert alert-{{message.tags}}"}{{ message }}{/div}
+        <div class="alert alert-{{message.tags}}" >{{ message }}</div>
     {% endif%}
     {% block content %} {% endblock %}
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
