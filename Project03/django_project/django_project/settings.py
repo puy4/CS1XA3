@@ -127,4 +127,4 @@ STATICFILES_DIRS = [
 STATIC_ROOT = "/home/puy4/CS1XA3/django_project/static/"
 
 
-LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "notes"
