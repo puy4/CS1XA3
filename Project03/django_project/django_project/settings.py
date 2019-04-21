@@ -125,3 +125,6 @@ STATICFILES_DIRS = [
     "/home/puy4/CS1XA3/public_html/",
 ]
 STATIC_ROOT = "/home/puy4/CS1XA3/django_project/static/"
+
+
+LOGIN_REDIRECT_URL = "home"
