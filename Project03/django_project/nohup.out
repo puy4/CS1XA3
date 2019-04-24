@@ -1,0 +1,426 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[24/Apr/2019 04:21:40] "GET /e/puy4/notes/ HTTP/1.1" 200 1576
+[24/Apr/2019 04:21:48] "GET /e/puy4/notes/ HTTP/1.1" 200 1576
+[24/Apr/2019 04:21:50] "GET /e/puy4/notes/ HTTP/1.1" 200 1576
+[24/Apr/2019 04:21:51] "GET /e/puy4/ HTTP/1.1" 200 1450
+[24/Apr/2019 04:21:54] "GET /e/puy4/ HTTP/1.1" 200 1450
+[24/Apr/2019 04:23:10] "GET /e/puy4/ HTTP/1.1" 200 1450
+[24/Apr/2019 04:23:13] "GET /e/puy4/notes/ HTTP/1.1" 200 1582
+[24/Apr/2019 04:23:45] "GET /e/puy4/notes/ HTTP/1.1" 200 1552
+[24/Apr/2019 04:25:15] "GET /e/puy4/notes/ HTTP/1.1" 200 1552
+Internal Server Error: /e/puy4/
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 9, in home
+    return render(request, 'home.html', hometitle)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'user' is not a registered namespace
+[24/Apr/2019 04:37:02] "GET /e/puy4/ HTTP/1.1" 500 146323
+Internal Server Error: /e/puy4/
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 9, in home
+    return render(request, 'home.html', hometitle)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+[24/Apr/2019 04:37:46] "GET /e/puy4/ HTTP/1.1" 500 146338
+Internal Server Error: /e/puy4/
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 9, in home
+    return render(request, 'home.html', hometitle)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+[24/Apr/2019 04:37:47] "GET /e/puy4/ HTTP/1.1" 500 146338
+Internal Server Error: /e/puy4/
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 9, in home
+    return render(request, 'home.html', hometitle)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Users' is not a registered namespace
+[24/Apr/2019 04:37:59] "GET /e/puy4/ HTTP/1.1" 500 146338
+Internal Server Error: /e/puy4/
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'ssers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 9, in home
+    return render(request, 'home.html', hometitle)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'ssers' is not a registered namespace
+[24/Apr/2019 04:38:15] "GET /e/puy4/ HTTP/1.1" 500 146373
+Internal Server Error: /e/puy4/
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 9, in home
+    return render(request, 'home.html', hometitle)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+[24/Apr/2019 04:38:32] "GET /e/puy4/ HTTP/1.1" 500 146373
+[24/Apr/2019 04:41:15] "GET /e/puy4/ HTTP/1.1" 200 1450
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 24, 2019 - 04:20:45
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 24, 2019 - 04:45:34
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[24/Apr/2019 04:53:07] "GET /e/puy4/ HTTP/1.1" 200 1445
+[24/Apr/2019 04:53:21] "GET /e/puy4/ HTTP/1.1" 200 1451
+Not Found: /e/puy4/e/puy4/login
+[24/Apr/2019 04:53:22] "GET /e/puy4/e/puy4/login HTTP/1.1" 404 2742
+Not Found: /e/puy4/e/puy4/login
+[24/Apr/2019 04:53:32] "GET /e/puy4/e/puy4/login HTTP/1.1" 404 2742
+Not Found: /e/puy4/e/puy4/login
+[24/Apr/2019 04:53:37] "GET /e/puy4/e/puy4/login HTTP/1.1" 404 2742
+Not Found: /e/puy4/e/puy4/login
+[24/Apr/2019 04:53:39] "GET /e/puy4/e/puy4/login HTTP/1.1" 404 2742
+Not Found: /e/puy4/e/puy4/login
+[24/Apr/2019 04:53:42] "GET /e/puy4/e/puy4/login HTTP/1.1" 404 2742
+[24/Apr/2019 04:54:12] "GET /e/puy4/ HTTP/1.1" 200 1407
+[24/Apr/2019 04:54:38] "GET /e/puy4/ HTTP/1.1" 200 1408
+Not Found: /e/puy4/*/login
+[24/Apr/2019 04:54:39] "GET /e/puy4/*/login HTTP/1.1" 404 2727
+Not Found: /e/puy4/*/login
+[24/Apr/2019 04:54:47] "GET /e/puy4/*/login HTTP/1.1" 404 2727
+[24/Apr/2019 04:54:59] "GET /e/puy4/ HTTP/1.1" 200 1406
+[24/Apr/2019 04:55:00] "GET /e/puy4/login HTTP/1.1" 301 0
+[24/Apr/2019 04:55:00] "GET /e/puy4/login/ HTTP/1.1" 200 1589
+[24/Apr/2019 04:55:45] "GET /e/puy4/ HTTP/1.1" 200 1353
+[24/Apr/2019 04:55:46] "GET /e/puy4/login/ HTTP/1.1" 200 1589
+[24/Apr/2019 04:56:09] "GET /e/puy4/ HTTP/1.1" 200 1343
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 24, 2019 - 04:51:07
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 95, in handle
+    self.run(**options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 579, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 564, in start_django
+    reloader.run(django_main_thread)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 272, in run
+    get_resolver().urlconf_module
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 2, in <module>
+    from . import views
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 17
+    input = 
+           ^
+SyntaxError: invalid syntax
