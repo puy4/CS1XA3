@@ -9,9 +9,10 @@ def home(request):
     return render(request, 'home.html', hometitle)
 
 def notes(request):
-    context = {'notes':Post.objects.all()}
-    return render(request, 'notes.html', context)
+   notes = Post.objects.all().filter(user=request.user)
+   return render(request, 'notes.html',{'notes': notes})
 
-def notesinput(request):
-    if request.method == 'POST':
-        input = 
+##def uploadnotes(request):
+   
+
+

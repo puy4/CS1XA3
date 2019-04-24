@@ -3,6 +3,15 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+
+{% if messages %}
+<div class="col-100 bg-success">
+    {% for message in messages %}
+    <p>{{ message }}</p>
+    {% endfor %}
+</div>
+{% endif %}
+
   <h2>Login</h2>
   <form method="post">
     {% csrf_token %}

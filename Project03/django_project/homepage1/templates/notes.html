@@ -4,6 +4,9 @@
    <header>
       <h1>A Note-taking App</h1>
    </header>
+   
+   <h3>hi, {{ user.username }}</h3>
+ 
    <div>
    {% for note in notes %}
      <p>{{ note.content }}</p>
@@ -11,10 +14,13 @@
      <p>{{ note.user}}</p>
    </div> 
    {% endfor %}
+
    <div>
-      <br></br><br></br><br></br>
-      <textarea rows="10" cols="10" ></textarea>
-      <input type="submit" value="upload">
+      <br></br><br></br> 
+      <textarea rows="10" cols="10" form="postform"></textarea>
+      <form name="postform" method="POST" id="postform">
+          <input type="submit" value="upload">
+      </form>
    </div>
 {% endblock %}
 
