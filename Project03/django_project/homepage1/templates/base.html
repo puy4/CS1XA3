@@ -7,39 +7,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>{{titlt}}</title>
+    <title>{{title}}</title>
 </head>
 
 <body>
   <style>
-    #svg1 {position:fixed; z-index: 2; buttom:0; left:0; } 
     #usernamedisplay {font-size: 75%;}
 
   </style>
-  
-   <svg id = "svg1"xmlns="http://www.w3.org/2000/svg">
-    <defs>
-            <radialGradient id="myGradient">
-              <stop offset="0" stop-color="red" />
-              <stop offset="95%" stop-color="#00E6FF" />
-              <animate attributeName="fy" dur="2s" from="95%" to="0%" fill="freeze"/>
 
-
-            </radialGradient>
-    </defs>
-
-    <polygon points="0,25 50,50 50,0 100,25 " fill="#D45454">
-
-    </polygon>
-
-
-    <polygon points="0,25 50,0 50,50 100,25" fill="#5460D4">
-
-    </polygon>
- 
    <div class="jumbotron text-center">
-    <h1 id="h11">A Note-taking App</h1>
+      <h1 id="h11">A Note-taking App</h1>
    </div>
+
     <div id="usernamedisplay"class="col-sm-400" style="background-color:lavender;"> hi, {{ user.username }}</div>
     {% block content %}{% endblock content %}
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
