@@ -1275,3 +1275,1010 @@ Django version 2.2, using settings 'django_project.settings'
 Starting development server at http://localhost:10048/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
+[24/Apr/2019 21:19:44] "GET /e/puy4/notes/ HTTP/1.1" 200 1360
+[24/Apr/2019 21:19:47] "GET /e/puy4/notes/ HTTP/1.1" 200 1360
+[24/Apr/2019 21:19:48] "GET /e/puy4/admin/ HTTP/1.1" 200 4164
+Not Found: /e/puy4/addnotes
+[24/Apr/2019 21:19:50] "GET /e/puy4/addnotes HTTP/1.1" 404 2730
+/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 24, 2019 - 21:13:53
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[24/Apr/2019 21:20:38] "GET /e/puy4/addnotes HTTP/1.1" 301 0
+[24/Apr/2019 21:20:39] "GET /e/puy4/addnotes/ HTTP/1.1" 200 1360
+/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 24, 2019 - 21:20:38
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 571, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 7, in <module>
+    path('addnotes/', name='addnotes')
+TypeError: _path() missing 1 required positional argument: 'view'
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 95, in handle
+    self.run(**options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 579, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 564, in start_django
+    reloader.run(django_main_thread)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 272, in run
+    get_resolver().urlconf_module
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 7, in <module>
+    path('addnotes/', name='addnotes')
+TypeError: _path() missing 1 required positional argument: 'view'
+Watching for file changes with StatReloader
+[24/Apr/2019 21:23:00] "GET /e/puy4/ HTTP/1.1" 200 1360
+[24/Apr/2019 21:23:01] "GET /e/puy4/login/ HTTP/1.1" 200 1609
+[24/Apr/2019 21:23:02] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[24/Apr/2019 21:23:02] "GET /e/puy4/notes/ HTTP/1.1" 200 1360
+[24/Apr/2019 21:23:06] "GET /e/puy4/addnotes/ HTTP/1.1" 200 1360
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 24, 2019 - 21:22:57
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[25/Apr/2019 00:07:48] "GET /e/puy4/addnotes/ HTTP/1.1" 200 1360
+[25/Apr/2019 00:07:51] "GET /e/puy4/ HTTP/1.1" 200 1360
+[25/Apr/2019 00:14:01] "GET /e/puy4/ HTTP/1.1" 200 1360
+[25/Apr/2019 00:14:03] "GET /e/puy4/admin/ HTTP/1.1" 200 4164
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/css/dashboard.css HTTP/1.1" 304 0
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/css/base.css HTTP/1.1" 304 0
+[25/Apr/2019 00:14:03] "GET /e/puy4/admin/ HTTP/1.1" 200 4164
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[25/Apr/2019 00:14:03] "GET /e/puy4/static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[25/Apr/2019 00:14:06] "GET /e/puy4/admin/auth/user/ HTTP/1.1" 200 10629
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/css/changelists.css HTTP/1.1" 200 6170
+[25/Apr/2019 00:14:06] "GET /e/puy4/admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/core.js HTTP/1.1" 200 7135
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/actions.js HTTP/1.1" 200 6538
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/urlify.js HTTP/1.1" 200 8972
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/img/search.svg HTTP/1.1" 200 458
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Apr/2019 00:14:06] "GET /e/puy4/static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[25/Apr/2019 00:14:15] "GET /e/puy4/admin/ HTTP/1.1" 200 4164
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 24, 2019 - 21:29:32
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[25/Apr/2019 00:19:31] "GET /e/puy4/ HTTP/1.1" 200 1360
+[25/Apr/2019 00:19:32] "GET /e/puy4/login/ HTTP/1.1" 200 1609
+[25/Apr/2019 00:19:33] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[25/Apr/2019 00:19:33] "GET /e/puy4/notes/ HTTP/1.1" 200 1360
+[25/Apr/2019 00:19:39] "GET /e/puy4/addnotes/ HTTP/1.1" 200 1360
+/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 00:19:24
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 95, in handle
+    self.run(**options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 579, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 564, in start_django
+    reloader.run(django_main_thread)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 272, in run
+    get_resolver().urlconf_module
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 571, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 7, in <module>
+    path('addnotes/',views.addnotes, name='addnotes')
+AttributeError: module 'homepage1.views' has no attribute 'addnotes'
+
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 7, in <module>
+    path('addnotes/',views.addnotes, name='addnotes')
+AttributeError: module 'homepage1.views' has no attribute 'addnotes'
+Watching for file changes with StatReloader
+[25/Apr/2019 00:25:03] "GET /e/puy4/register/ HTTP/1.1" 200 2547
+[25/Apr/2019 00:25:08] "GET /e/puy4/addnotes/ HTTP/1.1" 200 1373
+Forbidden (CSRF token missing or incorrect.): /e/puy4/addnotes/
+[25/Apr/2019 00:25:10] "POST /e/puy4/addnotes/ HTTP/1.1" 403 2513
+[25/Apr/2019 00:26:50] "GET /e/puy4/addnotes/ HTTP/1.1" 200 1394
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 00:25:01
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 39, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:22:51] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62970
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 01:22:48
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 39, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:23:22] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62970
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 39, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:23:25] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62970
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 39, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:23:26] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62970
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 01:23:21
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 39, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:23:43] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62971
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 39, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:24:25] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62971
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 01:23:43
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 01:24:52
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:37] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:37] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:38] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:38] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:38] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:39] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:39] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:39] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:39] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Not Found: /e/puy4/addno
+[25/Apr/2019 01:26:47] "GET /e/puy4/addno HTTP/1.1" 404 2901
+Not Found: /e/puy4/addnootes
+[25/Apr/2019 01:26:50] "GET /e/puy4/addnootes HTTP/1.1" 404 2913
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:26:53] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62904
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 01:26:31
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:27:12] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:27:35] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+[25/Apr/2019 01:27:43] "GET /e/puy4/notes/ HTTP/1.1" 200 1360
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:27:49] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62776
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:28:15] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:28:16] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:28:16] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:28:17] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:28:17] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:28:17] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:28:17] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:29:42] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:29:42] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:29:42] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:29:43] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:30:28] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:30:29] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:30:30] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 38, in uploadnotes
+    form = NoteForm(instance=note)
+NameError: name 'NoteForm' is not defined
+[25/Apr/2019 01:30:30] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62911
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 01:27:10
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 36, in uploadnotes
+    form = thefrom(instance=note)
+NameError: name 'thefrom' is not defined
+[25/Apr/2019 01:33:25] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62899
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 36, in uploadnotes
+    form = thefrom(instance=note)
+NameError: name 'thefrom' is not defined
+[25/Apr/2019 01:34:00] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62899
+Internal Server Error: /e/puy4/addnotes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 36, in uploadnotes
+    form = thefrom(instance=note)
+NameError: name 'thefrom' is not defined
+[25/Apr/2019 01:34:01] "GET /e/puy4/addnotes/ HTTP/1.1" 500 62899
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 01:31:27
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 95, in handle
+    self.run(**options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 579, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 564, in start_django
+    reloader.run(django_main_thread)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 272, in run
+    get_resolver().urlconf_module
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 2, in <module>
+    from . import views
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 27
+    return HttpResponseRedirect('/notes/')
+                                         ^
+TabError: inconsistent use of tabs and spaces in indentation
+Watching for file changes with StatReloader
+Performing system checks...
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 95, in handle
+    self.run(**options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 579, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 564, in start_django
+    reloader.run(django_main_thread)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 272, in run
+    get_resolver().urlconf_module
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 2, in <module>
+    from . import views
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 27
+    return HttpResponseRedirect('/notes/')
+                                         ^
+TabError: inconsistent use of tabs and spaces in indentation
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 571, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 2, in <module>
+    from . import views
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 27
+    return HttpResponseRedirect('/notes/')
+                                         ^
+TabError: inconsistent use of tabs and spaces in indentation
+
