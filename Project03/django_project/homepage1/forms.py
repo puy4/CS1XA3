@@ -5,5 +5,5 @@ from pagedown.widgets import PagedownWidget
 class theform(forms.Form):
     content = forms.CharField(widget=forms.Textarea)
     class Meta:
-	model = Notes
-	fields = ('content', 'user', 'date')
+        model = Post
+        fields = ('content', 'user', 'date')
