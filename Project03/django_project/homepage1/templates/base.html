@@ -7,15 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>{{title}}</title>
+    <title>{{titlt}}</title>
 </head>
 
 <body>
   <style>
-    #h11 {display:inline-block;margin-right:10px; width:200px; background-color:red;} 
-    #svg1 {display:inline-block; width:200px; background-color:red;} 
+    #svg1 {position:fixed; z-index: 2; buttom:0; left:0; } 
+    #usernamedisplay {font-size: 75%;}
+
   </style>
-   <h1 id="h11">The APP!</h1>
+  
    <svg id = "svg1"xmlns="http://www.w3.org/2000/svg">
     <defs>
             <radialGradient id="myGradient">
@@ -27,17 +28,19 @@
             </radialGradient>
     </defs>
 
-    <polygon points="0,50 100,100 100,0 200,5 " fill="#D45454">
+    <polygon points="0,25 50,50 50,0 100,25 " fill="#D45454">
 
     </polygon>
 
 
-    <polygon points="0,50 100,0 100,100 200,50" fill="#5460D4">
+    <polygon points="0,25 50,0 50,50 100,25" fill="#5460D4">
 
     </polygon>
-    <circle cx=100 cy=50 r=50 fill="url('#myGradient')" >
-</svg>
-   <h3>hi, {{ user.username }}</h3> 
+ 
+   <div class="jumbotron text-center">
+    <h1 id="h11">A Note-taking App</h1>
+   </div>
+    <div id="usernamedisplay"class="col-sm-400" style="background-color:lavender;"> hi, {{ user.username }}</div>
     {% block content %}{% endblock content %}
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
