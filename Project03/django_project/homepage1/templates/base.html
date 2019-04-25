@@ -12,6 +12,27 @@
 
 <body>
    <h1>The APP!</h1>
+   <svg viewBox="0 0 230 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+            <radialGradient id="myGradient">
+              <stop offset="0" stop-color="red" />
+              <stop offset="95%" stop-color="#00E6FF" />
+              <animate attributeName="fy" dur="2s" from="95%" to="0%" fill="freeze"/>
+
+
+            </radialGradient>
+    </defs>
+
+    <polygon points="0,5 10,10 10,0 20,5 " fill="#D45454">
+
+    </polygon>
+
+
+    <polygon points="0,5 10,0 10,10 20,5" fill="#5460D4">
+
+    </polygon>
+    <circle cx=10 cy=5 r=5 fill="url('#myGradient')" >
+</svg>
    <h3>hi, {{ user.username }}</h3> 
     {% block content %}{% endblock content %}
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
