@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
+   {% if messages %}
+         <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+         </ul>
+   {% endif %}
    <div>
       <form name="theform" method="POST" id="theform"> {% csrf_token %}
             {{ form }}

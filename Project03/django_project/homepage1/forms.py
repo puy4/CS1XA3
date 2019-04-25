@@ -1,9 +1,8 @@
 from django import forms
-from notes.models import Post
-from pagedown.widgets import PagedownWidget
+from .models import Post
 
-class theform(forms.Form):
+class theform(forms.ModelForm):
     content = forms.CharField(widget=forms.Textarea)
     class Meta:
         model = Post
-        fields = ('content', 'user', 'date')
+        fields = ['content']
