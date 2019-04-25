@@ -24,15 +24,15 @@ def uploadnotes(request):
 		if request.POST.get('control') == 'delete':
 			note.delete()
 			messages.add_message(request, messages.INFO, 'Note Deleted!')
-                     return HttpResponseRedirect('notes')
+			return HttpResponseRedirect('notes')
 		form = theform(request.POST, instance=note)
 		if form.is_valid():
 			obj = form.save(commit=False)
 			obj.user = request.user
 			obj.save()
 			messages.add_message(request, messages.INFO, 'Note Added!')
-                     return HttpResponseRedirect('notes')
-	        else:
-	         	form = thefrom(instance=note)
+			return HttpResponseRedirect('notes')
+		else:
+	         form = thefrom(instance=note)
 
 	return render(request, 'addnotes.html', {'form':form, 'note':note})
