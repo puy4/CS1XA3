@@ -1,10 +1,43 @@
 {% extends "base.html" %}
     
 {% block content %} 
- 
-   <div>
-
-   <a href="login" class="btn btn-primary">Login</a>
-   <a class="btn btn-primary">create a account</a>
+ {% if not user.is_authenticated %}
+   <div class="container">
+      <div class="row">
+         <div id="loginbut"class="col text-center" style="background-color:lavender;">
+                   Login
+         </div>
+         <div id="accountcreatebut"class="col text-center" style="background-color:orange;">
+          create a account
+         </div>
+         <div id="logoutbut" class="col text-center" style="background-color:lavender;;">
+          logout
+         </div>
+      </div>
    </div>
+   <script>
+     var loginbut = document.getElementById('loginbut');
+     var accountcreatebut = document.getElementById('accountcreatebut');
+     accountcreatebut.style.cursor = 'pointer';
+     loginbut.style.cursor = 'pointer';
+     loginbut.onclick = function(){
+          document.location.href = "login";}
+     accountcreat
+ {% endif %}
+ {% if user.is_authenticated %}
+    <div id="logoutbut" class="col text-center" style="background-color:lavender;;">
+          logout
+         </div>
+  {% endif %}
+   <script>
+     var loginbut = document.getElementById('loginbut');
+     var accountcreatebut = document.getElementById('accountcreatebut');
+     accountcreatebut.style.cursor = 'pointer';
+     loginbut.style.cursor = 'pointer';
+     loginbut.onclick = function(){
+          document.location.href = "login";}
+     accountcreatebut.onclick = function(){
+          document.location.href = "register";}
+    }
+   </script>
 {% endblock %}
