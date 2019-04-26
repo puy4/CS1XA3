@@ -1,16 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-   <header>
-      <h1>A Note-taking App</h1>
-   </header>
-   
+    <header>
+       <div>{{user}}'s notes</div> 
+    </header>
  
    <div>
+     <div>{{ note.user}}</div>
    {% for note in notes %}
-     <p>{{ note.content }}</p>
-     <p>{{ note.date}}</p>
-     <p>{{ note.user}}</p>
+     <br></br><br></br>
+   
+     <div class="card-body">{{ note.content }}</div>
+     <div class="card-footer">{{ note.date}}</div>
    </div> 
    {% endfor %}
 
