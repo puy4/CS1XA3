@@ -4,7 +4,7 @@
  {% if not user.is_authenticated %}
    <div class="container">
       <div class="row">
-         <div id="loginbut"class="col text-center" style="background-color:lavender;" onclick="location.href='login';" style="cursor: pointer;">
+         <div id="loginbut"class="col text-center" style="background-color:lavender;">
                    Login
          </div>
          <div id="accountcreatebut"class="col text-center" style="background-color:orange;">
@@ -15,11 +15,13 @@
          </div>
       </div>
    </div>
+   <script>
+   var loginbut = document.gec
  {% endif %}
  {% if user.is_authenticated %}
     <div id="logoutbut" class="col text-center" style="background-color:lavender;;">
           logout
          </div>
   {% endif %}
-
+  
 {% endblock %}
