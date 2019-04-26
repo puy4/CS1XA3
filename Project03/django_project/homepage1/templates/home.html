@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-    
-{% block content %} 
+
+{% block content %}
  {% if not user.is_authenticated %}
    <div class="container">
       <div class="row">
@@ -13,33 +13,34 @@
       </div>
    </div>
  {% endif %}
+ <script>
+    var loginbut = document.getElementById('loginbut');
+    var accountcreatebut = document.getElementById('accountcreatebut');
+
+    loginbut.style.cursor = 'pointer';
+    loginbut.onclick = function() {
+         window.location.href = "login";
+    };
+
+    accountcreatebut.style.cursor = 'pointer';
+    accountcreatebut.onclick = function() {
+         window.location.href = "register";
+    };
+
+
+ </script>
  {% if user.is_authenticated %}
     <div id="logoutbut" class="col text-center" style="background-color:lavender;;">
           logout
          </div>
-     <script>
+
+  {% endif %}
+  <script>
       var logoutbut = document.getElementById('logoutbut');
       logoutbut.style.cursor = 'pointer';
       logoutbut.onclick = function() {
            window.location.href = "logout";
       };
 
-     </script>
-  {% endif %}
-   <script>
-      var loginbut = document.getElementById('loginbut');
-      var accountcreatebut = document.getElementById('accountcreatebut');
-      
-      loginbut.style.cursor = 'pointer';
-      loginbut.onclick = function() {
-           window.location.href = "login";
-      };
-
-      accountcreatebut.style.cursor = 'pointer';
-      accountcreatebut.onclick = function() {
-           window.location.href = "register";
-      };
-
-
-   </script>  
+  </script>
 {% endblock %}

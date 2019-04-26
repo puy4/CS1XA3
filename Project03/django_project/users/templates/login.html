@@ -11,15 +11,16 @@
     {% endfor %}
 </div>
 {% endif %}
-  <div class="col text-center" style="background-color:orange;"> 
-   
+  <div class="col text-center" style="background-color:orange;">
+
   <h2 class="text-white">Login</h2>
- 
+
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Login</button>
   </form>
+  <a href="passwordreset">reset password<a>
   </div>
 
 {% endblock %}
