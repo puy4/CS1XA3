@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
-
+from django.contrib.auth.forms import SetPasswordForm
 
 def register(request):
     if request.method =='POST':
@@ -21,7 +21,7 @@ def resetpassword(request):
         if form.is_valid():
             form.save()
             messsages.success(request, 'password reset successful')
-            reuturn redirect('login')
+            return redirect('login')
     else:
-        form = SetPasswordForm
-    return render(request, 'passwordreset.html',{'form':form})
+        form = SetPasswordForm()
+    return render(request, 'passwordreset.html',{'form': form})

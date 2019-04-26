@@ -3432,3 +3432,148 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 [26/Apr/2019 04:54:30] "GET /e/puy4/notes/ HTTP/1.1" 200 8650
 [26/Apr/2019 04:54:30] "GET /e/puy4/notes/ HTTP/1.1" 200 8650
 [26/Apr/2019 04:54:31] "GET /e/puy4/notes/ HTTP/1.1" 200 8650
+[26/Apr/2019 04:56:36] "GET /e/puy4/notes/ HTTP/1.1" 200 3275
+[26/Apr/2019 05:00:46] "GET /e/puy4/notes/ HTTP/1.1" 200 3312
+[26/Apr/2019 05:02:32] "GET /e/puy4/notes/ HTTP/1.1" 200 3393
+[26/Apr/2019 05:02:33] "GET /e/puy4/notes/ HTTP/1.1" 200 3393
+[26/Apr/2019 05:06:01] "GET /e/puy4/notes/ HTTP/1.1" 200 3843
+[26/Apr/2019 05:06:11] "GET /e/puy4/notes/ HTTP/1.1" 200 3834
+[26/Apr/2019 05:06:16] "GET /e/puy4/notes/ HTTP/1.1" 200 3843
+[26/Apr/2019 05:06:23] "GET /e/puy4/notes/ HTTP/1.1" 200 3843
+[26/Apr/2019 05:07:07] "GET /e/puy4/notes/ HTTP/1.1" 200 4005
+[26/Apr/2019 05:07:15] "GET /e/puy4/notes/ HTTP/1.1" 200 4005
+[26/Apr/2019 05:07:35] "GET /e/puy4/notes/ HTTP/1.1" 200 4086
+[26/Apr/2019 05:07:51] "GET /e/puy4/notes/ HTTP/1.1" 200 4086
+[26/Apr/2019 05:08:16] "GET /e/puy4/notes/ HTTP/1.1" 200 4221
+[26/Apr/2019 05:08:44] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
+[26/Apr/2019 05:08:44] "GET /e/puy4/login/ HTTP/1.1" 200 2111
+[26/Apr/2019 05:08:50] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
+[26/Apr/2019 05:08:52] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 05:13:07] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 16:36:18] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 16:36:19] "GET /e/puy4/login HTTP/1.1" 301 0
+[26/Apr/2019 16:36:19] "GET /e/puy4/login/ HTTP/1.1" 200 2111
+[26/Apr/2019 16:36:21] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[26/Apr/2019 16:36:21] "GET /e/puy4/notes/ HTTP/1.1" 200 4221
+[26/Apr/2019 16:36:27] "GET /e/puy4/ HTTP/1.1" 200 2377
+[26/Apr/2019 16:36:29] "GET /e/puy4/logout HTTP/1.1" 301 0
+[26/Apr/2019 16:36:29] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
+[26/Apr/2019 16:36:31] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 16:36:32] "GET /e/puy4/register HTTP/1.1" 301 0
+[26/Apr/2019 16:36:32] "GET /e/puy4/register/ HTTP/1.1" 200 2949
+[26/Apr/2019 16:36:41] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
+[26/Apr/2019 16:36:47] "GET /e/puy4/ HTTP/1.1" 200 2368
+Not Found: /e/puy4/signup/
+[26/Apr/2019 16:47:11] "GET /e/puy4/signup/ HTTP/1.1" 404 2907
+[26/Apr/2019 16:47:14] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 16:47:17] "GET /e/puy4/register HTTP/1.1" 301 0
+[26/Apr/2019 16:47:17] "GET /e/puy4/register/ HTTP/1.1" 200 2949
+[26/Apr/2019 16:47:32] "POST /e/puy4/register/ HTTP/1.1" 302 0
+[26/Apr/2019 16:47:32] "GET /e/puy4/login/ HTTP/1.1" 200 2210
+[26/Apr/2019 16:47:37] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[26/Apr/2019 16:47:37] "GET /e/puy4/notes/ HTTP/1.1" 200 1783
+/home/puy4/CS1XA3/Project03/django_project/homepage1/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 25, 2019 - 22:33:13
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[0](_exception[1]).with_traceback(_exception[2])
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/models.py", line 5, in <module>
+    from django.dispath import receiver
+ModuleNotFoundError: No module named 'django.dispath'
+
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/apps/registry.py", line 155, in get_app_config
+    return self.app_configs[app_label]
+KeyError: 'auth'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 165, in get_user_model
+    return django_apps.get_model(settings.AUTH_USER_MODEL, require_ready=False)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/apps/registry.py", line 205, in get_model
+    app_config = self.get_app_config(app_label)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/apps/registry.py", line 162, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label 'auth'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 95, in handle
+    self.run(**options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 579, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 564, in start_django
+    reloader.run(django_main_thread)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/autoreload.py", line 272, in run
+    get_resolver().urlconf_module
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 18, in <module>
+    from users import views as userviews
+  File "/home/puy4/CS1XA3/Project03/django_project/users/views.py", line 2, in <module>
+    from django.contrib.auth.forms import UserCreationForm
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 20, in <module>
+    UserModel = get_user_model()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 170, in get_user_model
+    "AUTH_USER_MODEL refers to model '%s' that has not been installed" % settings.AUTH_USER_MODEL
+django.core.exceptions.ImproperlyConfigured: AUTH_USER_MODEL refers to model 'auth.User' that has not been installed

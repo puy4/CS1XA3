@@ -26,4 +26,5 @@ urlpatterns = [
     path('e/puy4/register/', userviews.register, name='register'),
     path('e/puy4/login/', authviews.LoginView.as_view(template_name='login.html'), name='login'),
     path('e/puy4/logout/', authviews.LogoutView.as_view(template_name='logout.html'), name='logout'),
+    path('e/puy4/passwordreset/', userviews.passwordreset.as_view(template_name='passwordreset.html'), name='passwordreset'),
     ]
