@@ -3208,3 +3208,29 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 33: 'e
 [26/Apr/2019 02:07:17] "GET /e/puy4/login/ HTTP/1.1" 200 2111
 [26/Apr/2019 02:07:19] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
 [26/Apr/2019 02:07:25] "GET /e/puy4/ HTTP/1.1" 200 2111
+[26/Apr/2019 02:20:07] "GET /e/puy4/ HTTP/1.1" 200 2691
+[26/Apr/2019 02:20:09] "GET /e/puy4/login/ HTTP/1.1" 200 2111
+[26/Apr/2019 02:20:10] "GET /e/puy4/login/ HTTP/1.1" 200 2111
+Not Found: /e/puy4/accountcreatebut
+[26/Apr/2019 02:20:12] "GET /e/puy4/accountcreatebut HTTP/1.1" 404 2934
+Not Found: /e/puy4/logoutbut
+[26/Apr/2019 02:20:16] "GET /e/puy4/logoutbut HTTP/1.1" 404 2913
+[26/Apr/2019 02:21:17] "GET /e/puy4/ HTTP/1.1" 200 2680
+[26/Apr/2019 02:21:18] "GET /e/puy4/register/ HTTP/1.1" 200 2949
+[26/Apr/2019 02:21:20] "GET /e/puy4/register/ HTTP/1.1" 200 2949
+[26/Apr/2019 02:21:44] "GET /e/puy4/ HTTP/1.1" 200 2557
+[26/Apr/2019 02:21:52] "GET /e/puy4/login/ HTTP/1.1" 200 2111
+[26/Apr/2019 02:21:53] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[26/Apr/2019 02:21:53] "GET /e/puy4/notes/ HTTP/1.1" 200 2472
+[26/Apr/2019 02:21:58] "GET /e/puy4/ HTTP/1.1" 200 2342
+[26/Apr/2019 02:23:01] "GET /e/puy4/ HTTP/1.1" 200 2342
+[26/Apr/2019 02:23:02] "GET /e/puy4/ HTTP/1.1" 200 2342
+[26/Apr/2019 02:23:02] "GET /e/puy4/ HTTP/1.1" 200 2342
+[26/Apr/2019 02:24:18] "GET /e/puy4/ HTTP/1.1" 200 2377
+[26/Apr/2019 02:24:18] "GET /e/puy4/ HTTP/1.1" 200 2377
+[26/Apr/2019 02:24:19] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
+[26/Apr/2019 02:24:21] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 02:24:22] "GET /e/puy4/register/ HTTP/1.1" 200 2949
+[26/Apr/2019 02:24:24] "GET /e/puy4/register/ HTTP/1.1" 200 2949
+[26/Apr/2019 02:24:26] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 02:24:27] "GET /e/puy4/login/ HTTP/1.1" 200 2111

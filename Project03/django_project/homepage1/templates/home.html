@@ -10,9 +10,6 @@
          <div id="accountcreatebut"class="col text-center" style="background-color:orange;">
           create a account
          </div>
-         <div id="logoutbut" class="col text-center" style="background-color:lavender;;">
-          logout
-         </div>
       </div>
    </div>
  {% endif %}
@@ -20,12 +17,19 @@
     <div id="logoutbut" class="col text-center" style="background-color:lavender;;">
           logout
          </div>
+     <script>
+      var logoutbut = document.getElementById('logoutbut');
+      logoutbut.style.cursor = 'pointer';
+      logoutbut.onclick = function() {
+           window.location.href = "logout";
+      };
+
+     </script>
   {% endif %}
    <script>
       var loginbut = document.getElementById('loginbut');
       var accountcreatebut = document.getElementById('accountcreatebut');
-      var logoutbut = document.getElementById('logoutbut');
-
+      
       loginbut.style.cursor = 'pointer';
       loginbut.onclick = function() {
            window.location.href = "login";
@@ -33,12 +37,7 @@
 
       accountcreatebut.style.cursor = 'pointer';
       accountcreatebut.onclick = function() {
-           window.location.href = "accountcreatebut";
-      };
-
-      logoutbut.style.cursor = 'pointer';
-      logoutbut.onclick = function() {
-           window.location.href = "logoutbut";
+           window.location.href = "register";
       };
 
 
