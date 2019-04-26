@@ -10,12 +10,13 @@
           <li id="notes" onload="func()"> {{ note.content }} <p style="font-size:25%; ">{{ note.date }}</p></li>
             
       <script>
-      var classes = [""list-group-item list-group-item-success"",""list-group-item list-group-item-secondary"",
-      ""list-group-item list-group-item-info"" ,""list-group-item list-group-item-warning"",
-      ""list-group-item list-group-item-danger"",""list-group-item list-group-item-primary"",
-      ""list-group-item list-group-item-dark"",""list-group-item list-group-item-light"",] 
+      var classes = ['"list-group-item list-group-item-success"','"list-group-item list-group-item-secondary"',
+      '"list-group-item list-group-item-info"' ,'"list-group-item list-group-item-warning"',
+      '"list-group-item list-group-item-danger','"list-group-item list-group-item-primary"',
+      '"list-group-item list-group-item-dark"','"list-group-item list-group-item-light"',] 
       function func(){
-         document.getElementById("notes").className = classes[Math.floor(Math.random() * 8)];
+         var a = Math.floor(Math.random() * 8)
+         document.getElementById("notes").className = classes[a];
       }   
       </script> 
    {% endfor %}
