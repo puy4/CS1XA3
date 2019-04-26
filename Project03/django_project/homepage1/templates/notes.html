@@ -2,24 +2,22 @@
 
 {% block content %}
     <header>
-       <div>{{user}}'s notes</div> 
+       <div class="col "style="background-color:#79c2ff;font-size:150%;"><p style="color:#feffff">{{user}}'s notes</p></div> 
     </header>
- 
-   <div>
-     <div>{{ note.user}}</div>
+       
    {% for note in notes %}
-     <div class="container">
-        <div class="card-body text-center">
-          <p class="card-text">{{ note.content }}</p>
-          <p class="card-text">{{ note.date }}</p>
-          <br></br>
-        </div>
-        
-      </div>
-
+    
+          <li class="list-group-item"> {{ note.content }} <p style="font-size:25%;.">{{ note.date }}</p></li>
+            
+      <script>
+      var classes = ["list-group-item list-group-item-success","list-group-item list-group-item-secondary","list-group-item list-group-item-info" 
+,"list-group-item list-group-item-info",
+"list-group-item list-group-item-info","list-group-item list-group-item-info","list-group-item list-group-item-info",
+"list-group-item list-group-item-info",] 
+      </script>
    {% endfor %}
-
-  
+        
+       
 {% endblock %}
 
 

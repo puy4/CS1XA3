@@ -3246,3 +3246,116 @@ Not Found: /e/puy4/logoutbut
 [26/Apr/2019 02:40:42] "GET /e/puy4/notes/ HTTP/1.1" 200 2959
 [26/Apr/2019 02:40:43] "GET /e/puy4/notes/ HTTP/1.1" 200 2959
 [26/Apr/2019 02:40:54] "GET /e/puy4/notes/ HTTP/1.1" 200 2963
+[26/Apr/2019 03:13:26] "GET /e/puy4/notes/ HTTP/1.1" 200 2999
+[26/Apr/2019 03:13:28] "GET /e/puy4/ HTTP/1.1" 200 2377
+[26/Apr/2019 03:13:29] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
+[26/Apr/2019 03:13:30] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 03:13:31] "GET /e/puy4/login/ HTTP/1.1" 200 2111
+[26/Apr/2019 03:13:33] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[26/Apr/2019 03:13:33] "GET /e/puy4/notes/ HTTP/1.1" 200 2999
+[26/Apr/2019 03:13:37] "GET /e/puy4/ HTTP/1.1" 200 2377
+[26/Apr/2019 03:13:38] "GET /e/puy4/logout/ HTTP/1.1" 200 1670
+[26/Apr/2019 03:13:39] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 03:13:40] "GET /e/puy4/register/ HTTP/1.1" 200 2949
+[26/Apr/2019 03:19:16] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 03:19:17] "GET /e/puy4/ HTTP/1.1" 200 2368
+[26/Apr/2019 03:19:18] "GET /e/puy4/login/ HTTP/1.1" 200 2111
+[26/Apr/2019 03:19:19] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[26/Apr/2019 03:19:20] "GET /e/puy4/notes/ HTTP/1.1" 200 3827
+[26/Apr/2019 03:20:53] "GET /e/puy4/notes/ HTTP/1.1" 200 4043
+[26/Apr/2019 03:21:34] "GET /e/puy4/notes/ HTTP/1.1" 200 4066
+[26/Apr/2019 03:21:42] "GET /e/puy4/notes/ HTTP/1.1" 200 4067
+[26/Apr/2019 03:21:47] "GET /e/puy4/notes/ HTTP/1.1" 200 4066
+[26/Apr/2019 03:24:04] "GET /e/puy4/notes/ HTTP/1.1" 200 4083
+[26/Apr/2019 03:24:05] "GET /e/puy4/notes/ HTTP/1.1" 200 4083
+[26/Apr/2019 03:24:05] "GET /e/puy4/notes/ HTTP/1.1" 200 4083
+[26/Apr/2019 03:24:27] "GET /e/puy4/notes/ HTTP/1.1" 200 4084
+[26/Apr/2019 03:24:27] "GET /e/puy4/notes/ HTTP/1.1" 200 4084
+[26/Apr/2019 03:24:28] "GET /e/puy4/notes/ HTTP/1.1" 200 4084
+[26/Apr/2019 03:24:32] "GET /e/puy4/notes/ HTTP/1.1" 200 4119
+[26/Apr/2019 03:24:33] "GET /e/puy4/notes/ HTTP/1.1" 200 4119
+[26/Apr/2019 03:24:33] "GET /e/puy4/notes/ HTTP/1.1" 200 4119
+[26/Apr/2019 03:24:33] "GET /e/puy4/notes/ HTTP/1.1" 200 4119
+[26/Apr/2019 03:24:37] "GET /e/puy4/notes/ HTTP/1.1" 200 4119
+[26/Apr/2019 03:24:38] "GET /e/puy4/notes/ HTTP/1.1" 200 4119
+[26/Apr/2019 03:25:13] "GET /e/puy4/notes/ HTTP/1.1" 200 4066
+[26/Apr/2019 03:25:30] "GET /e/puy4/notes/ HTTP/1.1" 200 4093
+[26/Apr/2019 03:26:22] "GET /e/puy4/notes/ HTTP/1.1" 200 4092
+[26/Apr/2019 03:26:36] "GET /e/puy4/notes/ HTTP/1.1" 200 4092
+[26/Apr/2019 03:28:13] "GET /e/puy4/notes/ HTTP/1.1" 200 4111
+[26/Apr/2019 03:28:14] "GET /e/puy4/notes/ HTTP/1.1" 200 4111
+[26/Apr/2019 03:28:14] "GET /e/puy4/notes/ HTTP/1.1" 200 4111
+[26/Apr/2019 03:28:14] "GET /e/puy4/notes/ HTTP/1.1" 200 4111
+[26/Apr/2019 03:30:56] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:30:56] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:30:57] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:31:58] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:31:58] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:32:36] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:33:31] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:33:57] "GET /e/puy4/notes/ HTTP/1.1" 200 4122
+[26/Apr/2019 03:45:16] "GET /e/puy4/notes/ HTTP/1.1" 200 3516
+[26/Apr/2019 03:45:51] "GET /e/puy4/notes/ HTTP/1.1" 200 3561
+[26/Apr/2019 03:46:07] "GET /e/puy4/notes/ HTTP/1.1" 200 3561
+[26/Apr/2019 03:46:25] "GET /e/puy4/notes/ HTTP/1.1" 200 3381
+[26/Apr/2019 03:46:49] "GET /e/puy4/notes/ HTTP/1.1" 200 3351
+[26/Apr/2019 03:47:34] "GET /e/puy4/notes/ HTTP/1.1" 200 3340
+[26/Apr/2019 03:47:52] "GET /e/puy4/notes/ HTTP/1.1" 200 3088
+[26/Apr/2019 03:48:06] "GET /e/puy4/notes/ HTTP/1.1" 200 3043
+[26/Apr/2019 03:48:45] "GET /e/puy4/notes/ HTTP/1.1" 200 3052
+Internal Server Error: /e/puy4/notes/
+Traceback (most recent call last):
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 18, in notes
+    return render(request, 'notes.html',{'notes': notes})
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 810, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/puy4/.local/lib/python3.6/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[::3]' from 'notes[::3]'
+[26/Apr/2019 03:51:49] "GET /e/puy4/notes/ HTTP/1.1" 500 162227
+[26/Apr/2019 03:55:27] "GET /e/puy4/login/ HTTP/1.1" 200 2115
+[26/Apr/2019 03:55:30] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[26/Apr/2019 03:55:30] "GET /e/puy4/notes/ HTTP/1.1" 200 2812
+[26/Apr/2019 03:59:35] "GET /e/puy4/notes/ HTTP/1.1" 200 2947
