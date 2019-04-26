@@ -8,11 +8,15 @@
    <div>
      <div>{{ note.user}}</div>
    {% for note in notes %}
-     <br></br><br></br>
-   
-     <div class="card-body">{{ note.content }}</div>
-     <div class="card-footer">{{ note.date}}</div>
-   </div> 
+     <div class="container">
+        <div class="card-body text-center">
+          <p class="card-text">{{ note.content }}</p>
+          <p class="card-text">{{ note.date }}</p>
+          <br></br>
+        </div>
+        
+      </div>
+
    {% endfor %}
 
   
