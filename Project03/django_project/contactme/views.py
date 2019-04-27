@@ -3,10 +3,8 @@ from django import forms
 from .forms import thecontact
 import json
 
-def validateemail(request):
-    email = request.POST.get('email',none)
-    data = { include2 : Contact.objects.filter(email__contains='@')}
-    return JsonResponse(data)
+from django.contrib import messages
+
 
 
 def send(request):
@@ -14,7 +12,10 @@ def send(request):
     if request.method == 'POST':
         form = thecontact(request.POST)
         if form.is_valid():
-            form = form.cleaned_data
+            a = form.cleaned_data
+            b = json.dumps(a)
+            messages.success(request,b[last_name])
+
 
     else:
         form = thecontact()
