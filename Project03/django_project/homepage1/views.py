@@ -48,4 +48,4 @@ def deletenotes(request):
     if request.method == 'POST' :
         content.delete()
         return redirect('../notes/')
-    erturn render(request, 'notes.html', {'note'=note})
+    return render(request, 'notes.html', {'content':content})
