@@ -15,6 +15,10 @@ def home(request):
    return render(request, 'home.html', hometitle)
 
 
+def contactmeagain(request):
+   return render(request, 'contactmeagain.html',)
+
+
 def notes(request):
    notes = Post.objects.all().filter(user=request.user)
    return render(request, 'notes.html',{'notes': notes})
