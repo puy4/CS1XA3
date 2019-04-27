@@ -50,4 +50,4 @@ def deletenotes(request):
 			          messages.add_message(request, messages.INFO, 'Note Deleted')
 			          return HttpResponseRedirect(reverse('../notes'))
 
-        return render(request, 'notes.html', {'note':note)
+            return render(request, 'notes.html', {'note':note})
