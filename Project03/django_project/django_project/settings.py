@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'contactme.apps.ContactmeConfig',
     'users.apps.UsersConfig',
     'homepage1.apps.Homepage1Config',
     'django.contrib.admin',
