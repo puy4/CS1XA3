@@ -20,11 +20,12 @@
    {% block javascript %}
      <script>
      function func() {
-         var formData = JSON.stringify($("#theform").serializeArray());
+         var formData = JSON.stringify($("theform").serializeArray());
+         console.log(formData)
          $.post('test.php', {
            elements: formData
          });
-         console.log(formData)
+
        }
 
      </script>
