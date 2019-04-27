@@ -42,7 +42,7 @@
 
   <script>
   function func() {
-      var formData = JSON.stringify($("theform").serializeArray());
+      var formData = JSON.stringify($("form").serializeArray());
       console.log(formData)
       var xhr = new XMLHttpRequest();
       xhr.open('POST', 'test.php');
