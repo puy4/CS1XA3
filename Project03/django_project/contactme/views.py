@@ -13,8 +13,7 @@ def send(request):
         form = thecontact(request.POST)
         if form.is_valid():
             a = form.cleaned_data
-            b = json.loads(a)
-            messages.success(request,b[first_name])
+            messages.success(request,a[first_name])
 
 
     else:
