@@ -14,9 +14,6 @@ hometitle = {'title':'A Simple Note-taking App'}
 def home(request):
    return render(request, 'home.html', hometitle)
 
-def contactme(request):
-    
-    return render(request, 'contactme.html', )
 
 def notes(request):
    notes = Post.objects.all().filter(user=request.user)

@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from users import views as userviews
 from django.contrib.auth import views as authviews
-
+from contactme import views as contviews
 
 
 urlpatterns = [
@@ -26,4 +26,5 @@ urlpatterns = [
     path('e/puy4/register/', userviews.register, name='register'),
     path('e/puy4/login/', authviews.LoginView.as_view(template_name='login.html'), name='login'),
     path('e/puy4/logout/', authviews.LogoutView.as_view(template_name='logout.html'), name='logout'),
+    path('contactme/',contviews.send, name='contactme'),
     ]
