@@ -5,6 +5,6 @@ def send(request):
      reqDict = json.loads(body_unicode)
      firstname = reqDict.get('first_name','')
      lastname = reqDict.get('last_name','')
-     email = reqDict.get('email,'')
-     title = reqDict.get('title,'')
+     email = reqDict.get('email','')
+     title = reqDict.get('title','')
      content = reqDict.get('content','')
