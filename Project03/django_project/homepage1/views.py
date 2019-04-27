@@ -38,16 +38,15 @@ def uploadnotes(request):
         return render(request, 'addnotes.html', {'form':form})
 
 def deletenotes(request):
+	    id = request.GET.get('id', None)
+	    if id is not None:
+		      note = get_object_or_404(Notes, id=id)
+	    else:
+		     note = None
 
-	id = request.GET.get('id', None)
-	if id is not None:
-		note = get_object_or_404(Notes, id=id)
-	else:
-		note = None
-
-	if request.method == 'POST':
-		if request.POST.get('deletion') == 'delete':
-			note.delete()
-			messages.add_message(request, messages.INFO, 'Note Deleted')
-			return HttpResponseRedirect(reverse('../notes'))
-    return render(request, 'notes.html')
+	    if request.method == 'POST':
+		      if request.POST.get('deletion') == 'delete':
+			          note.delete()
+			          messages.add_message(request, messages.INFO, 'Note Deleted')
+			          return HttpResponseRedirect(reverse('../notes'))
+        return render(request, 'notes.html')
