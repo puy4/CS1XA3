@@ -48,4 +48,4 @@ def deletenotes(request):
      if request.method == 'POST':
          note.delete()
          return HttpResponseRedirect('../notes')
-    return render(request, 'notes.html', {'form':form})
+     return render(request, 'notes.html', {'form':form})
