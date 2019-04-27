@@ -2,25 +2,25 @@
 
 {% block content %}
 
-<form>
+<form id="form">
   <div class="form-group">
     <label for="Email1">Email address</label>
-    <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input name="Email1"type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">Please double check</small>
   </div>
 
   <div class="row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
+      <input name="firstname"type="text" class="form-control" placeholder="First name">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
+      <input name="lastname"type="text" class="form-control" placeholder="Last name">
     </div>
   </div>
 
   <div class="form-group">
       <label for="Select1">Select a reason</label>
-      <select class="form-control" id="Select1">
+      <select name="reason"class="form-control" id="Select1">
         <option>No idea how this website works</option>
         <option>Notice a bug</option>
         <option>Notice many bugs</option>
@@ -30,20 +30,20 @@
 
       <div class="form-group">
         <label for="Textarea1">Enter your message here</label>
-        <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+        <textarea name="text" class="form-control" id="Textarea1" rows="3"></textarea>
       </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <input type="submit" class="btn btn-primary" value="submit"/>
 </form>
+<div id="b"></div>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-
-  var formData = $("form.login").serializeObject();
-  console.log(formData);
-
-
-
+$('form').submit(function() {
+  a = $(this).serializeArray();
+  console.log(a[0][0])
+  return false;
+});
 </script>
 
 

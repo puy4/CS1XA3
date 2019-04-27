@@ -3577,3 +3577,28 @@ Traceback (most recent call last):
   File "/home/puy4/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 170, in get_user_model
     "AUTH_USER_MODEL refers to model '%s' that has not been installed" % settings.AUTH_USER_MODEL
 django.core.exceptions.ImproperlyConfigured: AUTH_USER_MODEL refers to model 'auth.User' that has not been installed
+CommandError: "localhost:[portnum]" is not a valid port number or address:port pair.
+Watching for file changes with StatReloader
+[27/Apr/2019 05:01:50] "GET /e/puy4/notes/ HTTP/1.1" 200 6761
+[27/Apr/2019 05:01:57] "GET /e/puy4/contactme/ HTTP/1.1" 200 2783
+[27/Apr/2019 05:05:52] "GET /e/puy4/contactme/ HTTP/1.1" 200 2795
+[27/Apr/2019 05:06:08] "GET /e/puy4/contactme/? HTTP/1.1" 200 2795
+[27/Apr/2019 05:08:46] "GET /e/puy4/contactme/? HTTP/1.1" 200 2883
+[27/Apr/2019 05:09:20] "GET /e/puy4/contactme/? HTTP/1.1" 200 2884
+[27/Apr/2019 05:09:29] "GET /e/puy4/contactme/? HTTP/1.1" 200 2884
+[27/Apr/2019 05:11:43] "GET /e/puy4/contactme/? HTTP/1.1" 200 2953
+[27/Apr/2019 05:11:59] "GET /e/puy4/contactme/?Email1=puyuehaha%40gmail.com&firstname=love&lastname=a&reason=No+idea+how+this+website+works&text=sadadsad HTTP/1.1" 200 2953
+[27/Apr/2019 05:16:11] "GET /e/puy4/contactme/?Email1=&firstname=&lastname=&reason=No+idea+how+this+website+works&text=sdadasd HTTP/1.1" 200 2953
+[27/Apr/2019 05:16:43] "GET /e/puy4/contactme/?Email1=&firstname=&lastname=&reason=Others&text= HTTP/1.1" 200 2953
+[27/Apr/2019 05:17:24] "GET /e/puy4/contactme/?Email1=&firstname=&lastname=&reason=Others&text= HTTP/1.1" 200 2953
+[27/Apr/2019 05:17:25] "GET /e/puy4/contactme/?Email1=&firstname=&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2953
+[27/Apr/2019 05:17:26] "GET /e/puy4/contactme/?Email1=&firstname=&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2953
+[27/Apr/2019 05:17:30] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2953
+[27/Apr/2019 05:17:44] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2940
+[27/Apr/2019 05:20:13] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 3013
+[27/Apr/2019 05:22:31] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 3016
+[27/Apr/2019 05:23:30] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2961
+[27/Apr/2019 05:24:52] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2948
+[27/Apr/2019 05:29:48] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 3005
+[27/Apr/2019 05:32:56] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2990
+[27/Apr/2019 05:33:21] "GET /e/puy4/contactme/?Email1=&firstname=asdasd&lastname=&reason=No+idea+how+this+website+works&text= HTTP/1.1" 200 2990
