@@ -12,7 +12,7 @@ def send(request):
     if request.method == 'POST':
         form = thecontact(request.POST)
         if form.is_valid():
-            a = form.cleaned_data
+            a = form.cleaned_data     #An inclusion of json???      
             messages.success(request,a['email'])
 
 
