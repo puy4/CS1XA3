@@ -52,5 +52,13 @@
     }
 
   </script>
+
+  <?php
+   if( $_GET["first_name"]  ) {
+      echo "Welcome ". $_GET['first_mame']. "<br />";
+
+      exit();
+   }
+   ?>
 {% endblock %}
 {% endblock %}
