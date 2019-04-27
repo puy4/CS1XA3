@@ -23,10 +23,11 @@ def contactmeagain(request):
     if subject and message and from_email:
         try:
             send_mail(subject, message, from_email,['lancepp@protonmail.com'])
-
-    
-
-   return render(request, 'contactmeagain.html',)
+        except BadHeaderError:
+            return HttpResponse('Invalid header found.')
+        return HttpResponseRedirect('contactmeagain/')
+    else:
+        return HttpResponse('Make sure all fields are entered and valid.')
 
 
 def notes(request):
