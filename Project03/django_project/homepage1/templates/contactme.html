@@ -33,17 +33,17 @@
         <textarea name="text" class="form-control" id="Textarea1" rows="3"></textarea>
       </div>
 
-  <input type="submit" class="btn btn-primary" value="submit"/>
+  <input type="button" class="btn btn-primary" onclick="func()" value="submit" />
 </form>
-<div id="b"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$('form').submit(function() {
-  a = $(this).serializeArray();
-  console.log(a[0][0])
-  return false;
-});
+<div id="b"style="visibility:hidden"></div>
+<div id="d"></div>
+<script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+function func(){
+   $.post('test.php',$("#form").serialize(), function(data) { console.log(data)})}
 </script>
 
 
