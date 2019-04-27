@@ -16,6 +16,16 @@ def home(request):
 
 
 def contactmeagain(request):
+    reqDict = json.loads(request.body)
+    subject = reqDict.get('reason','')
+    from_email = reqDict.get('Email1', '')
+    message = reqDict.get('text', '')
+    if subject and message and from_email:
+        try:
+            send_mail(subject, message, from_email,['lancepp@protonmail.com'])
+
+    
+
    return render(request, 'contactmeagain.html',)
 
 
