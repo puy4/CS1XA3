@@ -15,7 +15,8 @@ def home(request):
    return render(request, 'home.html', hometitle)
 
 def contactme(request):
-   return render(request, 'contactme.html', )
+    
+    return render(request, 'contactme.html', )
 
 def notes(request):
    notes = Post.objects.all().filter(user=request.user)
@@ -40,12 +41,3 @@ def uploadnotes(request):
         else: form = theform(instance=note)
 
         return render(request, 'addnotes.html', {'form':form})
-
-
-def deletenotes(request):
-     json_req = json.loads(request.body)
-     notes = json_req.get('content','')
-     if request.method == 'POST':
-         notes.delete()
-         return HttpResponseRedirect('../notes')
-     return render(request, 'notes.html', {'form':form})
