@@ -19,35 +19,35 @@ def notes(request):
 
 
 def uploadnotes(request):
-        id = request.GET.get('id', None)
-        if id is not None:
-                note = get_object_or_404(Post, id=id)
-        else:
-                note = None
+		id = request.GET.get('id', None)
+		if id is not None:
+				note = get_object_or_404(Post, id=id)
+		else:
+				note = None
 
-        if request.method == 'POST':
-                form = theform(request.POST, instance=note)
-                if form.is_valid():
-                        object = form.save(commit=False)
-                        object.user = request.user
-                        object.save()
-                        messages.add_message(request, messages.INFO, 'Note Added')
-                        return HttpResponseRedirect('../notes')
-        else: form = theform(instance=note)
+		if request.method == 'POST':
+				form = theform(request.POST, instance=note)
+				if form.is_valid():
+						object = form.save(commit=False)
+						object.user = request.user
+						object.save()
+						messages.add_message(request, messages.INFO, 'Note Added')
+						return HttpResponseRedirect('../notes')
+		else: form = theform(instance=note)
 
-        return render(request, 'addnotes.html', {'form':form})
+		return render(request, 'addnotes.html', {'form':form})
 
 def deletenotes(request):
-	    id = request.GET.get('id', None)
-	    if id is not None:
-		      note = get_object_or_404(Notes, id=id)
-	    else:
-		     note = None
+		id = request.GET.get('id', None)
+		if id is not None:
+			  note = get_object_or_404(Notes, id=id)
+		else:
+			 note = None
 
-	    if request.method == 'POST':
-		      if request.POST.get('deletion') == 'delete':
-			          note.delete()
-			          messages.add_message(request, messages.INFO, 'Note Deleted')
-			          return HttpResponseRedirect(reverse('../notes'))
+		if request.method == 'POST':
+			  if request.POST.get('deletion') == 'delete':
+					  note.delete()
+					  messages.add_message(request, messages.INFO, 'Note Deleted')
+					  return HttpResponseRedirect(reverse('../notes'))
 
-            return render(request, 'notes.html', {'note':note})
+			return render(request, 'notes.html', {'note':note})
