@@ -2,8 +2,7 @@ from django.shortcuts import render
 import json
 
 def send(request):
-     body_unicode = request.body.decode('utf-8')
-     reqDict = json.loads(body_unicode)
+     reqDict = json.loads(request.body.decode('utf-8'))
      firstname = reqDict.get('first_name','')
      lastname = reqDict.get('last_name','')
      email = reqDict.get('email','')
