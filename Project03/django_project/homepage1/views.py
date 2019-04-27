@@ -1,10 +1,17 @@
-from django.shortcuts import render
 from .models import Post
 from users import views as userviews
 from .forms import theform, deletenotes
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.views.generic import (
+    ListView,
+    DetailView,
+    CreateView,
+    UpdateView,
+    DeleteView
+
 
 
 hometitle = {'title':'A Simple Note-taking App'}
@@ -36,3 +43,16 @@ def uploadnotes(request):
         else: form = theform(instance=note)
 
         return render(request, 'addnotes.html', {'form':form})
+
+def deletenotes(request):
+    id = request.GET.get('id', None)
+    if id is not None:
+            note = get_object_or_404(Post, id=id)
+
+    else:
+            note = None
+    content = note.content
+    if request.method == 'POST' :
+        content.delete()
+        return redirect('../notes/')
+    erturn render(request, 'notes.html', {'note'=note})
