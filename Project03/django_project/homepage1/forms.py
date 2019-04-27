@@ -6,3 +6,11 @@ class theform(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['content']
+
+
+
+
+class deletenotes(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = []

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Post
 from users import views as userviews
-from .forms import theform
+from .forms import theform, deletenotes
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
@@ -43,9 +43,12 @@ def deletenotes(request):
              note = get_object_or_404(Notes, id=id)
         else:
              note = None
-        if request.GET.get('deletion') == 'delete':
-            note.delete()
-            messages.add_message(request, messages.INFO, 'Note Deleted')
-            return HttpResponseRedirect(reverse('../notes'))
+        if request.method == 'POST':
+             form = deletenotes(request.GET, instance=note)
+             if form.is_valid:
+                    note.delete()
+                    messages.add_message(request, messages.INFO, 'Note Deleted')
+                    return HttpResponseRedirect(reverse('../notes'))
+            else form = deletenotes(instance=note)
 
         return render(request, 'notes.html', {'note':note})
