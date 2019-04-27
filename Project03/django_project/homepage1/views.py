@@ -36,16 +36,3 @@ def uploadnotes(request):
         else: form = theform(instance=note)
 
         return render(request, 'addnotes.html', {'form':form})
-
-def deletenotes(request):
-    id = request.GET.get('id', None)
-    if id is not None:
-            note = get_object_or_404(Post, id=id)
-
-    else:
-            note = None
-    content = note.content
-    if request.method == 'POST' :
-        content.delete()
-        return redirect('../notes/')
-    erturn render(request, 'notes.html', {'note'=note})
