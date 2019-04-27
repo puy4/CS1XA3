@@ -8,5 +8,5 @@ class thecontact(forms.ModelForm):
     first_name = first_name = models.CharField(required=True)
     title = models.CharField(required=True)
     class Meta:
-        model = Post
+        model = Contact
         fields = ['content', 'email', 'last_name','first_name','title' ]
