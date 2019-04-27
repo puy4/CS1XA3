@@ -1,7 +1,7 @@
 from django import forms
 from homepage1.models import Post
 
-class thecontact(forms.ModelForm):
+class thecontact(forms.Form):
     content = forms.CharField(widget=forms.Textarea)
     email = forms.CharField(required=True)
     last_name = forms.CharField(required=True)
