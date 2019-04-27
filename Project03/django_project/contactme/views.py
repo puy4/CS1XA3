@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django import forms
-from .forms inport thecontact
+from .forms import thecontact
 import json
 
 def send(request):
