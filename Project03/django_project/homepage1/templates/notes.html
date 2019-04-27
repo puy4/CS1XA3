@@ -2,23 +2,22 @@
 
 {% block content %}
     <header>
-       <div onload="func()" class="col "style="background-color:#79c2ff;font-size:150%;"><p style="color:#feffff">{{user}}'s notes</p></div> 
+       <div onload="func()" class="col "style="background-color:#79c2ff;font-size:150%;"><p style="color:#feffff">{{user}}'s notes</p></div>
     </header>
    <ul class="list-group">
    {% for note in notes %}
-    
+
      <li style="font-size:20px;text-align:center" class= "list-group-item list-group-item-info list-group-item-action"id="notes">
           {{ note.content }}
-       <br></br>   <p style="font-size:37%; text-align:left">{{ note.date }}</p> 
+       <br></br>   <p style="font-size:37%; text-align:left">{{ note.date }}</p>
+                 <input type="submit" value="delete" name ="deletion" id="deletion"/>
      </li>
-     
- 
+
+
    {% endfor %}
    </ul>
    <br></br>
 
 
-       
+
 {% endblock %}
-
-

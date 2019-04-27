@@ -13,15 +13,3 @@ def register(request):
     else:
          form = UserCreationForm()
     return render(request, 'register.html', {'form': form})
-
-
-def resetpassword(request):
-    if request.method =='POST':
-        formm = SetPasswordForm(reques.POST)
-        if formm.is_valid():
-            formm.save()
-            messsages.success(request, 'password reset successful')
-            return redirect('login')
-    else:
-        formm = SetPasswordForm()
-    return render(request, 'passwordreset.html',{'formm': formm})

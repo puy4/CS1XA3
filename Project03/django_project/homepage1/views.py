@@ -31,8 +31,22 @@ def uploadnotes(request):
                         object = form.save(commit=False)
                         object.user = request.user
                         object.save()
-                        messages.add_message(request, messages.INFO, 'Note Added!')
+                        messages.add_message(request, messages.INFO, 'Note Added')
                         return HttpResponseRedirect('../notes')
         else: form = theform(instance=note)
 
         return render(request, 'addnotes.html', {'form':form})
+
+def deletenotes(request):
+
+	id = request.GET.get('id', None)
+	if id is not None:
+		note = get_object_or_404(Notes, id=id)
+	else:
+		note = None
+
+	if request.method == 'POST':
+		if request.POST.get('deletion') == 'delete':
+			note.delete()
+			messages.add_message(request, messages.INFO, 'Note Deleted')
+			return HttpResponseRedirect(reverse('../notes'))
