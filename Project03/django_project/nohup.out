@@ -4598,3 +4598,9 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 [27/Apr/2019 23:22:03] "GET /e/puy4/ HTTP/1.1" 200 6320
 [27/Apr/2019 23:22:11] "GET /e/puy4/ HTTP/1.1" 200 3130
 [27/Apr/2019 23:24:59] "GET /e/puy4/ HTTP/1.1" 200 6227
+[27/Apr/2019 23:33:46] "GET /e/puy4/ HTTP/1.1" 200 5918
+[27/Apr/2019 23:34:35] "GET /e/puy4/logout/ HTTP/1.1" 200 5058
+[27/Apr/2019 23:34:36] "GET /e/puy4/ HTTP/1.1" 200 5883
+[27/Apr/2019 23:34:39] "GET /e/puy4/login/ HTTP/1.1" 200 5280
+[27/Apr/2019 23:34:41] "POST /e/puy4/login/ HTTP/1.1" 302 0
+[27/Apr/2019 23:34:42] "GET /e/puy4/notes/ HTTP/1.1" 200 9501
