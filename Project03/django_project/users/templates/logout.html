@@ -4,6 +4,16 @@
 
 {% block content %}
   <h2>You have been logged out.</h2>
-  <a href='..' class="btn btn-primary btn-block">Go to homepage</a>
+     <div id="gh" class="row">
+  <div class="col  bg-success text-center">Go to homepage</div>
+     </div>
+    <script>
+    var gh = document.getElementById('gh');
 
+    gh.style.cursor = 'pointer';
+    gh.onclick = function() {
+         window.location.href = "../";
+    };
+    </script>
 {% endblock %}
+    

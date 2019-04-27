@@ -2,10 +2,20 @@
 
 {% block content %}
     <header>
-       <div onload="func()" class="col "style="background-color:#79c2ff;font-size:150%;"><p style="color:#feffff">{{user}}'s notes</p></div>
+       <div  class="col "style="background-color:#79c2ff;font-size:150%;"><p style="color:#feffff">{{user}}'s notes</p></div>
+       <div id="add" class="col " style="background-color:yellow;font-size:75%;"><p align="center">Add notes<p></div>
     </header>
+    <script>
+    var add = document.getElementById('add');
+
+    add.style.cursor = 'pointer';
+    add.onclick = function() {
+         window.location.href = "../addnotes";
+    };
+    </script>
+
    <ul class="list-group">
-   {% for note in notes %}
+   {% for note in notes|slice:"::-1" %}
 
      <li style="font-size:20px;text-align:center" class= "list-group-item list-group-item-info list-group-item-action"id="notes">
           {{ note.content }}

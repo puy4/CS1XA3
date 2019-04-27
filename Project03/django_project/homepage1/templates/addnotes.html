@@ -1,17 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-   {% if messages %}
-         <ul>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-         </ul>
-   {% endif %}
-   <div>
+   <div class="center">
+   <div class="row "> 
+   <div class="col-md-2 col-md-offset-5 "">
       <form name="theform" method="POST" id="theform"> {% csrf_token %}
             {{ form }}
           <input type="submit" value="upload">
       </form>
    </div>
+   </div>
+   </div>
+<style> 
+ .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+</style>
 {% endblock %}
