@@ -7,6 +7,3 @@ class thecontact(forms.ModelForm):
     last_name = forms.CharField(required=True)
     first_name = first_name = forms.CharField(required=True)
     title = forms.CharField(required=True)
-    class Meta:
-        model = Contact
-        fields = ['content', 'email', 'last_name','first_name','title' ]
