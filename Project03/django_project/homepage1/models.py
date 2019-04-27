@@ -7,6 +7,3 @@ class Post(models.Model):
      content = models.TextField()
      user = models.ForeignKey(User, on_delete=models.CASCADE)
      date = models.DateTimeField(default=timezone.now)
-
-class Contact(models.Model):
-    
