@@ -44,7 +44,7 @@ def uploadnotes(request):
 
 def deletenotes(request):
      reqDict = json.loads(request.body)
-     notes = json_req.get('content'.'')
+     notes = json_req.get('content','')
      if request.method == 'POST':
          note.delete()
          return HttpResponseRedirect('../notes')
