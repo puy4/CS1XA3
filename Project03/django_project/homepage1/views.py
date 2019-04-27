@@ -44,7 +44,7 @@ def deletenotes(request):
 		else:
 			 note = None
 
-		 if request.GET.get('deletion') == 'delete':
+		if request.GET.get('deletion') == 'delete':
 			note.delete()
 			messages.add_message(request, messages.INFO, 'Note Deleted')
 			return HttpResponseRedirect(reverse('../notes'))
