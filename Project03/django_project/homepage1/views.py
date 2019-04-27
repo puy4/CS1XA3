@@ -51,4 +51,4 @@ def deletenotes(request):
                     return HttpResponseRedirect('../notes')
         else: form = deletenotes(instance=note)
 
-        return render(request, 'notes.html', {'note':note})
+        return render(request, 'notes.html', {'form':form})
