@@ -6,3 +6,8 @@ class theform(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['content']
+
+class theform(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = [ ]

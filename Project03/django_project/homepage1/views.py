@@ -4,6 +4,7 @@ from .forms import theform
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
+import json
 
 
 
@@ -39,3 +40,12 @@ def uploadnotes(request):
         else: form = theform(instance=note)
 
         return render(request, 'addnotes.html', {'form':form})
+
+
+def deletenotes(request):
+     reqDict = json.loads(request.body)
+     notes = json_req.get('content'.'')
+     if request.method == 'POST':
+         note.delete()
+         return HttpResponseRedirect('../notes')
+    return render(request, 'notes.html', {'form':form})
