@@ -44,7 +44,7 @@ def deletenotes(request):
         else:
              note = None
         if request.method == 'POST':
-             form = deletenotes(request.GET, instance=note)
+             form = deletenotes(request.POST, instance=note)
              if form.is_valid:
                     note.delete()
                     messages.add_message(request, messages.INFO, 'Note Deleted')
