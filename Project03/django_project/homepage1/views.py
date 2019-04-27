@@ -16,9 +16,9 @@ def home(request):
 
 
 def contactmeagain(request):
-    subject = json.loads('reason','').decode('utf-8')
-    from_email = json.loads('Email1', '').decode('utf-8')
-    message = json.loads('text', '').decode('utf-8')
+    subject = request.POST.get('reason','')
+    from_email = request.POST.get('Email1', '')
+    message = request.POST.get('text', '')
     if subject and message and from_email:
         try:
             send_mail(subject, message, from_email,['lancepp@protonmail.com'])
