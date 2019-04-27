@@ -5,7 +5,7 @@ import json
 
 def validateemail(request):
     email = request.POST.get('email',none)
-    data = { include@ : Contact.objects.filter(email__contains='@')}
+    data = { include2 : Contact.objects.filter(email__contains='@')}
     return JsonResponse(data)
 
 
