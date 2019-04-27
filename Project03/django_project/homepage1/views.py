@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 import json
+import requests
 
 
 
@@ -16,7 +17,7 @@ def home(request):
 
 
 def contactmeagain(request):
-    reqDict = json.loads(request.body).decode('utf-8')
+    reqDict = json.loads(requests.body).decode('utf-8')
     subject = reqDict.get('reason','')
     from_email = reqDict.get('Email1', '')
     message = reqDict.get('text', '')
