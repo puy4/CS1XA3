@@ -15,18 +15,6 @@ def home(request):
    return render(request, 'home.html', hometitle)
 
 
-def contactmeagain(request):
-    subject = request.POST.get('reason','')
-    from_email = request.POST.get('Email1', '')
-    message = request.POST.get('text', '')
-    if subject and message and from_email:
-        try:
-            send_mail(subject, message, from_email,['lancepp@protonmail.com'])
-        except BadHeaderError:
-            return HttpResponse('Invalid header found.')
-        return HttpResponseRedirect('contactmeagain/')
-    else:
-        return HttpResponse('Make sure all fields are entered and valid.')
 
 
 def notes(request):
