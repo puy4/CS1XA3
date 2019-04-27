@@ -44,8 +44,10 @@
   function func() {
       var formData = JSON.stringify($("theform").serializeArray());
       console.log(formData)
-      $.post('test.php', {
-        elements: formData
+   var xhr = new XMLHttpRequest();
+   xhr.open('POST', 'test.php');
+   xhr.send(formData);
+
       });
 
     }
