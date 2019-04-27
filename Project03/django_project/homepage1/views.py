@@ -18,7 +18,6 @@ def notes(request):
    return render(request, 'notes.html',{'notes': notes})
 
 
-
 def uploadnotes(request):
         id = request.GET.get('id', None)
         if id is not None:
@@ -27,17 +26,13 @@ def uploadnotes(request):
                 note = None
 
         if request.method == 'POST':
-            if request.POST.get('control') == 'delete':
-                note.delete()
-                messages.add_message(request, messages.INFO, 'Note Deleted!')
-                return HttpResponseRedirect('/notes')
-            form = theform(request.POST, instance=note)
-            if form.is_valid():
-                    object = form.save(commit=False)
-                    object.user = request.user
-                    object.save()
-                    messages.add_message(request, messages.INFO, 'Note Added')
-                    return HttpResponseRedirect('../notes')
+                form = theform(request.POST, instance=note)
+                if form.is_valid():
+                        object = form.save(commit=False)
+                        object.user = request.user
+                        object.save()
+                        messages.add_message(request, messages.INFO, 'Note Added')
+                        return HttpResponseRedirect('../notes')
         else: form = theform(instance=note)
 
         return render(request, 'addnotes.html', {'form':form})
