@@ -41,7 +41,6 @@
 {% block javascript %}
 
   <script>
-  var $ = django.jQuery;
   function func() {
       var formData = JSON.stringify($("theform").serializeArray());
       console.log(formData)
