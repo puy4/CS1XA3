@@ -3954,3 +3954,132 @@ Watching for file changes with StatReloader
 [27/Apr/2019 08:21:56] "POST /e/puy4/login/ HTTP/1.1" 302 0
 [27/Apr/2019 08:21:56] "GET /e/puy4/notes/ HTTP/1.1" 200 6761
 [27/Apr/2019 08:22:05] "GET /e/puy4/contactme/ HTTP/1.1" 200 3141
+[27/Apr/2019 08:35:18] "GET /e/puy4/contactme/ HTTP/1.1" 200 3048
+[27/Apr/2019 08:38:50] "GET /e/puy4/contactme/ HTTP/1.1" 200 3048
+[27/Apr/2019 08:39:05] "GET /e/puy4/contactme/ HTTP/1.1" 200 3047
+[27/Apr/2019 08:45:50] "GET /e/puy4/register/ HTTP/1.1" 200 2971
+[27/Apr/2019 08:45:57] "GET /e/puy4/register/ HTTP/1.1" 200 2967
+[27/Apr/2019 08:45:59] "GET /e/puy4/register/ HTTP/1.1" 200 2967
+[27/Apr/2019 08:46:05] "GET /e/puy4/contactme HTTP/1.1" 301 0
+[27/Apr/2019 08:46:05] "GET /e/puy4/contactme/ HTTP/1.1" 200 3043
+/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 27, 2019 - 08:20:08
+Django version 2.2, using settings 'django_project.settings'
+Starting development server at http://localhost:10048/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 95, in handle
+    self.run(**options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 579, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 564, in start_django
+    reloader.run(django_main_thread)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 272, in run
+    get_resolver().urlconf_module
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 571, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/django_project/urls.py", line 25, in <module>
+    path('e/puy4/', include('homepage1.urls')),
+  File "/home/puy4/CS1XA3/Project03/python_env/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 2, in <module>
+    from . import views
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 47
+    notes = json_req.get('content'.'')
+                                    ^
+SyntaxError: invalid syntax
+
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/urls.py", line 2, in <module>
+    from . import views
+  File "/home/puy4/CS1XA3/Project03/django_project/homepage1/views.py", line 47
+    notes = json_req.get('content'.'')
+                                    ^
+SyntaxError: invalid syntax
