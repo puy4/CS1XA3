@@ -16,7 +16,7 @@ def home(request):
 
 
 def contactmeagain(request):
-    reqDict = json.loads(request.body)
+    reqDict = json.loads(request.body).decode('utf-8')
     subject = reqDict.get('reason','')
     from_email = reqDict.get('Email1', '')
     message = reqDict.get('text', '')
