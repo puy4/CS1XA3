@@ -49,6 +49,6 @@ def deletenotes(request):
                     note.delete()
                     messages.add_message(request, messages.INFO, 'Note Deleted')
                     return HttpResponseRedirect(reverse('../notes'))
-            else: form = deletenotes(instance=note)
+        else: form = deletenotes(instance=note)
 
         return render(request, 'notes.html', {'note':note})
