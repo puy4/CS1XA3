@@ -14,7 +14,7 @@ def send(request):
         if form.is_valid():
             a = form.cleaned_data
             b = json.dumps(a)
-            messages.success(request,b[last_name])
+            messages.success(request,b[0])
 
 
     else:
