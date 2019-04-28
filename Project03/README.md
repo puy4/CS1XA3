@@ -13,7 +13,7 @@ This app is being hosted on a web server, to use this app go to https://mac1xa3.
 
 ### Server
 
-My port number is 10048 and this is how you run the server.
+My port number is 10048 and this is how to run the server, make sure having django installed and run it in a python environment.
 ```bash
 python3 manage.py runserver localhost:[portnum]
 ```
