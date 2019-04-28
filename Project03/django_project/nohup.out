@@ -4704,6 +4704,7 @@ django.template.exceptions.TemplateDoesNotExist: base.html
 [28/Apr/2019 00:34:04] "GET /e/puy4/ HTTP/1.1" 200 6235
 [28/Apr/2019 00:34:07] "GET /e/puy4/ HTTP/1.1" 200 6235
 [28/Apr/2019 00:34:07] "GET /e/puy4/ HTTP/1.1" 200 6235
+<<<<<<< HEAD
 [28/Apr/2019 00:44:12] "GET /e/puy4/ HTTP/1.1" 200 6287
 [28/Apr/2019 00:44:12] "GET /e/puy4/static/svg1.svg HTTP/1.1" 404 1663
 /home/puy4/CS1XA3/Project03/django_project/django_project/settings.py changed, reloading.
@@ -4992,10 +4993,7 @@ Traceback (most recent call last):
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 [28/Apr/2019 01:48:41] "GET /e/puy4/register/ HTTP/1.1" 500 79089
-<<<<<<< HEAD
 =======
 >>>>>>> parent of 0dd0450... svg
 =======
 >>>>>>> parent of 4ce8496... no idea
-=======
->>>>>>> parent of af6ee16... revert
