@@ -61,9 +61,10 @@
      </svg>
      <h1 id="h11">A Note-taking App</h1>
    <style>
-   .container {cursor: url("/static/svg1.svg"), auto;}
+   .container {cursor: url["kk"], auto;}
    </style>
-
+  {% load static %}
+  <img id = "kk"src="{% static "svg1.svg" %}" alt="heart">
    <div id="usernamedisplay"class="col-sm-400" style="background-color:lavender;"> hi, {{ user.username }}</div>
    </div>
    </div>
